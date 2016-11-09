@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_add_task"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#e1e1e1"
+
     tools:context="com.example.vasuchand.taskbuilder.add_task">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3F51B5"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp"/>
+
     <EditText
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toolbar"
         android:layout_centerHorizontal="true"
         android:id="@+id/e1"
         android:textSize="18sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="add task type something "
-        android:textColor="#000"
-        android:textColorHint="#fff"/>
+        android:textColor="#308CFC"
+        android:textColorHint="#000"/>
     <EditText
         android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
@@ -28,8 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="type its description"
-        android:textColor="#000"
-        android:textColorHint="#fff"
+        android:textColor="#308CFC"
+        android:textColorHint="#000"
         android:layout_below="@+id/e1"/>
 
     <Button
